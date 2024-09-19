@@ -1,16 +1,21 @@
-# steeraudio
+# steerAudio
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+**steerAudio** is a powerful audio streaming application that allows users to stream audio from multiple applications to various audio sources simultaneously. This project aims to enhance the audio experience by providing flexibility in managing audio outputs across different applications.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Multi-Application Streaming**: Stream audio from multiple applications at the same time.
+- **Multiple Audio Sources**: Direct audio streams to various output devices effortlessly.
+- **User-Friendly Interface**: Intuitive design that makes it easy to manage audio streams.
+- **Cross-Platform Compatibility**: Works on various operating systems (Windows, macOS, Linux).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To get started with steerAudio, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/steerAudio.git
+   cd steerAudio
