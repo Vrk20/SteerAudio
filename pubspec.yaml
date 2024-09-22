@@ -38,7 +38,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.13.1"
+  flutter_launcher_icons: "^0.13.1" 
+  permission_handler: ^10.2.0
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
