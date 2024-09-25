@@ -36,17 +36,20 @@ class MainActivity: FlutterActivity() {
         val mediaSessionManager = getSystemService(MEDIA_SESSION_SERVICE) as MediaSessionManager
         val controllers = mediaSessionManager.getActiveSessions(null)
         val mediaInfo = mutableMapOf<String, String>()
-
+    
         if (controllers.isNotEmpty()) {
             val controller = controllers[0] // Get the first active session
             val metadata = controller.metadata
             val mediaTitle = metadata?.getString(android.media.MediaMetadata.METADATA_KEY_TITLE) ?: "Unknown"
             val mediaArtist = metadata?.getString(android.media.MediaMetadata.METADATA_KEY_ARTIST) ?: "Unknown"
-            
+    
             mediaInfo["title"] = mediaTitle
             mediaInfo["artist"] = mediaArtist
+        } else {
+            // Handle case where no active sessions are found
+            throw Exception("No active media sessions found.")
         }
-
+    
         return mediaInfo
     }
 
